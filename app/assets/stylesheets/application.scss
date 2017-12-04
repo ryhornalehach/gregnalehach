@@ -1,2 +1,24 @@
-// @import "*";
+@import "materialize";   //// import Materialize styling first
+// @import "*";           //// import all other .css files
 
+//// custom styling goes next
+
+.navbar-color {
+  background: #78909C;
+}
+
+.navbar-color-dark {
+  background: #607D8B;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.notice {
+  color: #018312;
+}
+
+.error {
+  color: #9c0900;
+}
