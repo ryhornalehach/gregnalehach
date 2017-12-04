@@ -1,0 +1,17 @@
+<% if current_user && current_user.admin? %>
+  <div class="row">
+    <div class="col s12">
+      <ul><p><b>Name:</b> <%= @project.name %> </p></ul>
+      <ul><p><b>URL:</b> <%= @project.url %> </p></ul>
+      <ul><p><b>Description:</b> <%= @project.description %> </p></ul>
+      <ul><p><b>Submitted at:</b> <%= @project.created_at %></p></ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <%= link_to "Edit Project", edit_project_path(@project), class: "btn waves-effect waves-light navbar-color-dark" %>
+      <%= link_to "Delete Project", project_path(@project), method: :delete, data: {confirm: "Are You Sure?"}, class: 'waves-effect waves-light btn red' %>
+    </div>
+  </div>
+<%end%>

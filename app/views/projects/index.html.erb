@@ -1,0 +1,23 @@
+<h3>Hello Greg! </h3>
+<table id = "projects" class="display nowrap" cellspacing="0" width="100%">
+  <thead>
+    <tr>
+        <th>Name</th>
+        <th>URL</th>
+        <th>Date submitted</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+      <% @projects.each do |project| %>
+      <tr>
+        <td><%= link_to project.name, project %></td>
+        <td><%= project.url %></td>
+        <td><%= project.created_at.strftime("%B %d, %Y") %></td>
+        <td><%= link_to "Edit Project", edit_project_path(project), class: 'waves-effect waves-light btn navbar-color-dark' %></td>
+        <td><%= link_to "Delete Project", project_path(project), method: :delete, data: {confirm: "Are You Sure?"}, class: 'waves-effect waves-light btn red' %></td>
+      </tr>
+      <% end %>
+  </tbody>
+</table>
