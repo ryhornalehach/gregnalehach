@@ -1,0 +1,54 @@
+<div class="row">
+  <div class="col s12">
+    <div class="row">
+      <div class="col s12">
+        <h4><b>New project</b></h4>
+      </div>
+    </div>
+
+    <%= form_for @project do |f| %>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <%= f.text_field :name, type: "text", :required => true %>
+          <%= f.label :name %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <%= f.label :description %>
+          <%= f.text_area :description, :required => true %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <%= f.label :url, value: "Project's URL" %>
+          <%= f.text_field :url %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <%= f.text_field :date, type: "text" %>
+          <%= f.label :date , value: "Project launch date" %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          <p>Is this project still under development?</p>
+          <%= f.label :developing, value: "Is this project still under development?", :required => true %>
+          <%= f.collection_radio_buttons :developing, [ [true, "YES"], [false, "NO"] ], :first, :last %>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12">
+          <%= f.submit "Submit New Project", class: "btn waves-effect waves-light navbar-color-dark" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
