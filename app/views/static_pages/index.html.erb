@@ -1,2 +1,34 @@
-<div id="app">
+<style>
+  .container{
+    width: 100%;
+    max-width: initial;
+  }
+  .parallax-container {
+    height: 800px;
+  }
+</style>
+
+
+<div class="parallax-container">
+  <div class="parallax parallax-container"><img src="<%= asset_path('laptop.jpg')%>"></div>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <div id="app">React
+    </div>
+
+    <div class="blackfield-right-bottom">
+      © 2017 Greg (Ryhor) Nalehach
+      <ul>
+        <li><a class="grey-text text-lighten-3" href="https://github.com/ryhornalehach">GitHub</a></li>
+        <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/ryhornalehach/">LinkedIn</a></li>
+      </ul>
+    </div>
 </div>
+
+
+
+ <script>
+   $('.parallax').parallax();
+ </script>
