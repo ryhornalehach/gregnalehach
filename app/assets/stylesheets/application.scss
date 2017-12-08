@@ -22,3 +22,50 @@
 .error {
   color: #9c0900;
 }
+
+.navbar-fixed {
+  position: absolute;
+  z-index: 999999999;
+}
+
+.callout {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+div.blackfield-right-bottom {
+  color: white;
+  background-color: black;
+  opacity: 0.5;
+  width: auto;
+  padding: 15px;
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+}
+
+.blackfield-main {
+  background-color: black;
+  opacity: 0.55;
+  filter: alpha(opacity=55);
+  width: 90%;
+  padding: 15px;
+  margin: auto;
+  margin-top: 70px;
+}
+
+div.blackfield-main h1,h2,p {
+  color: white;
+  opacity: 1;
+}
+
+div.blackfield-main h1,h2 {
+  text-align: center;
+}
