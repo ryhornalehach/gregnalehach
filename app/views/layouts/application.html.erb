@@ -12,8 +12,6 @@
   </head>
 
   <header>
-    <!-- <nav class="nav">
-      <div class="nav-wrapper navbar-color"> -->
     <div class="navbar-fixed">
       <nav class="transparent z-depth-0 black-text">
         <div class="nav-wrapper">
@@ -26,6 +24,8 @@
               <li><%= link_to "My projects", projects_path %></li>
             <% else %>
               <li><%=link_to "Sign In", new_user_session_path %></li>
+              <li><%=link_to "Projects", new_user_session_path %></li>
+              <li><%=link_to "Contacts", new_user_session_path %></li>
             <% end %>
           </ul>
           <ul class="side-nav flow-text" id="mobile-demo">
@@ -35,6 +35,8 @@
               <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
             <% else %>
               <li><%=link_to "Sign In", new_user_session_path %></li>
+              <li><%=link_to "Projects", new_user_session_path %></li>
+              <li><%=link_to "Contacts", new_user_session_path %></li>
             <% end %>
           </ul>
         </div>
@@ -42,8 +44,6 @@
     </div>
   </header>
   <body>
-    <!-- <p class="notice no-margin"><%= notice %></p>
-    <p class="alert no-margin"><%= alert %></p> -->
     <%= yield %>
   </body>
   <script>
