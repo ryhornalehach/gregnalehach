@@ -12,27 +12,25 @@
   </head>
 
   <header>
+    <% if current_user && current_user.admin %>
     <div class="navbar-fixed">
-      <nav class="transparent z-depth-0 black-text">
+      <nav class="grey darken-3 black-text">
         <div class="nav-wrapper">
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul class="left hide-on-med-and-down compress">
-            <% if current_user && current_user.admin %>
               <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
               <li><%= link_to "Profile", current_user %> </li>
               <li><%= link_to "My projects", projects_path %></li>
-            <% end %>
           </ul>
           <ul class="side-nav flow-text" id="mobile-demo">
-            <% if current_user && current_user.admin %>
               <li><%= link_to "Profile", current_user %> </li>
               <li><%= link_to "My projects", projects_path %></li>
               <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
-            <% end %>
           </ul>
         </div>
       </nav>
     </div>
+    <% end %>
   </header>
   <body>
     <%= yield %>
