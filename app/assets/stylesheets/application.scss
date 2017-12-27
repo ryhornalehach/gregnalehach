@@ -55,6 +55,10 @@ div.blackfield-right-bottom {
   right: 20px;
 }
 
+div.blackfield-right-bottom a {
+  color: white;
+}
+
 .blackfield-main {
   background-color: black;
   opacity: 0.55;
@@ -62,7 +66,11 @@ div.blackfield-right-bottom {
   width: 90%;
   padding: 15px;
   margin: auto;
-  margin-top: 70px;
+  margin-top: 30px;
+}
+
+div.blackfield-main a {
+  color: white;
 }
 
 div.blackfield-main h1,h2,p {
