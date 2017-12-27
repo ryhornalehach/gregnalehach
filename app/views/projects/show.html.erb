@@ -1,10 +1,12 @@
 <% if current_user && current_user.admin? %>
   <div class="row">
     <div class="col s12">
-      <ul><p><b>Name:</b> <%= @project.name %> </p></ul>
-      <ul><p><b>URL:</b> <%= @project.url %> </p></ul>
-      <ul><p><b>Description:</b> <%= @project.description %> </p></ul>
-      <ul><p><b>Submitted at:</b> <%= @project.created_at %></p></ul>
+      <ul>
+        <li><b>Name:</b> <%= @project.name %></li>
+        <li><b>URL:</b> <%= @project.url %></li>
+        <li><b>Description:</b> <%= @project.description %></li>
+        <li><b>Submitted at:</b> <%= @project.created_at %></li>
+      </ul>
     </div>
   </div>
 
