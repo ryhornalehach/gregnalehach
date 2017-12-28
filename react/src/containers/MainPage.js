@@ -35,7 +35,7 @@ class MainPage extends Component {
       <div className='row'>
         <div className='blackfield-main white-text'>
           <h2>{headerBlock}</h2>
-          <div className='row'>
+          <div className='row large-140'>
             <div className='col s4' onClick={this.handleActiveBlock}>About me</div>
             <div className='col s4' onClick={this.handleActiveBlock}>Projects</div>
             <div className='col s4' onClick={this.handleActiveBlock}>Contacts</div>
