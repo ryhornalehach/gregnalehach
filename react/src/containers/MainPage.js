@@ -22,7 +22,7 @@ class MainPage extends Component {
     let textBlock, headerBlock;
     if (this.state.selected == null || this.state.selected == 'About me') {
       textBlock = <AboutMe />;
-      headerBlock = 'Greg Nalehach, Web-developer';
+      headerBlock = 'Greg Nalehach, Web Developer';
     } else if (this.state.selected == 'Projects') {
       textBlock = <Projects />;
       headerBlock = 'My Projects';
