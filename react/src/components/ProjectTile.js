@@ -1,6 +1,10 @@
 import React from 'react';
 
 const ProjectTile = props => {
+  let photo;
+  if (props.project.photo) {
+    photo = <img src={props.project.photo} width="100%"></img>
+  }
 
   return (
     <div>
@@ -9,6 +13,7 @@ const ProjectTile = props => {
       </div>
       <div className='large-120'>
         <p><a href={props.project.url}>{props.project.url}</a></p>
+        {photo}
         {props.project.description}
       </div>
       <hr/>
