@@ -11,6 +11,7 @@ const ProjectTile = props => {
         <p><a href={props.project.url}>{props.project.url}</a></p>
         {props.project.description}
       </div>
+      <hr/>
     </div>
   )
 }
