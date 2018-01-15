@@ -8,7 +8,7 @@ const AboutMe = props => {
         Hello dear guests, welcome to my personal page. My name is Greg and I am web-developer. I build custom web-applications and here you can find out more about my projects.
       </div>
       <div className='row'>
-        <img src='https://s3.amazonaws.com/gregnalehach/Ryhor+(Greg)+Nalehach.jpg' className="circle centered"></img>
+        <img src='https://s3.amazonaws.com/gregnalehach/Ryhor+(Greg)+Nalehach.jpg' className="circle centered" width='170px' ></img>
       </div>
     </div>
   )

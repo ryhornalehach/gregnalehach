@@ -37,6 +37,13 @@
 
     <div class="row">
       <div class="input-field col s12">
+        <%= f.label :video, value: "Project's video", class: "active" %>
+        <%= f.text_field :video %>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
         <%= f.text_field :date, type: "text" %>
         <%= f.label :date , value: "Project launch date", class: "active" %>
       </div>
