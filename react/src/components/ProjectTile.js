@@ -9,7 +9,7 @@ const ProjectTile = props => {
   return (
     <div>
       <div className='large-140'>
-        <i className="fa fa-cog fa-lg" aria-hidden="true"></i> {props.project.name}
+        <i className="fa fa-cog fa-lg fa-spin" aria-hidden="true"></i> {props.project.name}
       </div>
       <div className='large-120'>
         <p><a href={props.project.url}>{props.project.url}</a></p>
