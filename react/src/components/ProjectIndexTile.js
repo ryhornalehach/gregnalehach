@@ -4,7 +4,7 @@ const ProjectIndexTile = props => {
 
   return (
     <div onClick={props.clickHandler} id={props.project.id} className='large-140'>
-      <i className="fa fa-cog fa-lg fa-spin" aria-hidden="true"></i> {props.project.name}
+      <i className="fa fa-cog fa-lg" aria-hidden="true"></i> {props.project.name}
     </div>
   )
 }
